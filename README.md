@@ -4,4 +4,4 @@
 <hr/>
 <p>The main JS file is <i>index.js</i></p>
 <hr/>
-<p>All the files <i>*.tsx, *.tmx and the file named project</i> are for the tileset map</p>
+<p>All the files <i>*.tsx, *.tmx and the files named project or session</i> are for the <b>tileset map</b></p>
