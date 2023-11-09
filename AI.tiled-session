@@ -8,11 +8,11 @@
     ],
     "fileStates": {
         "AI.tmx": {
-            "scale": 3.8519531249999996,
-            "selectedLayer": 4,
+            "scale": 4,
+            "selectedLayer": 5,
             "viewCenter": {
-                "x": 191.20170368116825,
-                "y": 111.63168035696177
+                "x": 126,
+                "y": 110.75
             }
         },
         "K:/ALI/My_course/JS/projects/TowerDefence/tiles/TowerDefence.tmx": {
