@@ -16,7 +16,6 @@ image.onload = () => {
 image.src = 'img\\AI.png'
 
 
-
 const player = new Player({ position: { x: waypoints[0].x, y: waypoints[0].y } })
 
 function animate() {
@@ -25,3 +24,4 @@ function animate() {
     ctx.drawImage(image, 0, 0)
     player.update()
 }
+

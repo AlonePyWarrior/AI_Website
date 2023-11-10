@@ -23,6 +23,9 @@
                 "y": 382.48994354865965
             }
         },
+        "Picture2.tsx": {
+            "scaleInDock": 1
+        },
         "cell.tsx": {
             "scaleInDock": 1,
             "scaleInEditor": 1
@@ -43,6 +46,7 @@
     ],
     "project": "AI.tiled-project",
     "recentFiles": [
+        "AI.tmx",
         "tileset.tsx",
         "cell.tsx"
     ],
