@@ -7,11 +7,18 @@ moveButton.onclick = function () {
 }
 
 
-class Player {
+class Player extends Sprite{
     constructor({ position = { x: 0, y: 0 } }) {
+        super({
+            position, 
+            imageSrc: 'img\\robot_li.png',
+            frames: {
+                max: 1
+            }
+        })
         this.position = position
-        this.width = 30
-        this.height = 30
+        this.width = 34
+        this.height = 60
         this.waypointIndex = 0
         this.center = {
             x: this.position.x + this.width / 2,
@@ -26,8 +33,11 @@ class Player {
     }
 
     draw() {
-        ctx.fillStyle = 'orange'
-        ctx.fillRect(this.position.x, this.position.y, this.width, this.height)
+        // Yellow object
+        // ctx.fillStyle = 'orange'
+        // ctx.fillRect(this.position.x, this.position.y, this.width, this.height)
+        super.draw()
+
     }
 
     update() {
