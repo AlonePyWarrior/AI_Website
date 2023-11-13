@@ -7,10 +7,10 @@ moveButton.onclick = function () {
 }
 
 
-class Player extends Sprite{
+class Player extends Sprite {
     constructor({ position = { x: 0, y: 0 } }) {
         super({
-            position, 
+            position,
             imageSrc: 'img\\robot_li.png',
             frames: {
                 max: 1
@@ -42,6 +42,8 @@ class Player extends Sprite{
 
     update() {
         this.draw();
+        // only if the user clicks on the button with the id "move_the_yellow"
+        // the waypointIndex will increment
         if (clicked > this.waypointIndex) {
             clicked = this.waypointIndex;
         }
@@ -71,11 +73,6 @@ class Player extends Sprite{
                 // this.waypointIndex < waypoints.length - 1
                 this.waypointIndex < 26
             ) {
-
-                // Implement a conditional statement here 
-                // that only if the user clicks on the button with the id "move_the_yellow"
-                // the index will increment
-
                 // Increment the index which means moving to the next cell on the maze
                 this.waypointIndex++
 
@@ -98,6 +95,11 @@ class Player extends Sprite{
                 if (this.waypointIndex === 25) {
                     console.log("End Point");
                     alert("End Point\nDone")
+                    // alert("Play agian?")
+                    if (confirm("Do you want to play again?") ) {
+                        // Refresh the page and bypass the cache
+                        location.reload(true);
+                    } else {}
                 }
             }
 
