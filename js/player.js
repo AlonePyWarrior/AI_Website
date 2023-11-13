@@ -29,7 +29,7 @@ class Player extends Sprite{
             y: 0
         }
 
-        this.speed = 0.3
+        this.speed = 0.8
     }
 
     draw() {
