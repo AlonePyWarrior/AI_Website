@@ -29,7 +29,7 @@ class Player extends Sprite {
             y: 0
         }
 
-        this.speed = 0.8
+        this.speed = 0.99
     }
 
     draw() {
@@ -95,7 +95,7 @@ class Player extends Sprite {
                 if (this.waypointIndex === 25) {
                     console.log("End Point");
                     alert("End Point\nDone")
-                    // alert("Play agian?")
+                    // alert("Play again?")
                     if (confirm("Do you want to play again?") ) {
                         // Refresh the page and bypass the cache
                         location.reload(true);
