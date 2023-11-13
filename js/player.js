@@ -95,11 +95,11 @@ class Player extends Sprite {
                 if (this.waypointIndex === 25) {
                     console.log("End Point");
                     alert("End Point\nDone")
-                    // alert("Play again?")
+                    // Ask for playing again
                     if (confirm("Do you want to play again?") ) {
                         // Refresh the page and bypass the cache
                         location.reload(true);
-                    } else {}
+                    } else {} // If the user doesn't want to play again then go to the next chapter
                 }
             }
 
